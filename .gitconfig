@@ -3,5 +3,6 @@
 	email = kikudjiro@gmail.com
 [core]
 	autocrlf = input
+	editor = vim -f
 [push]
 	default = current
