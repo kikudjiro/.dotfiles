@@ -86,4 +86,5 @@ export EDITOR='vim'
 alias l="ls -aF"
 alias ll="ls -laF"
 alias mux="tmuxinator"
+alias lf="find . -maxdepth 1 -type f"
 
