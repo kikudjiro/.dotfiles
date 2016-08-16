@@ -75,4 +75,5 @@ nnoremap <space>s :Unite -quick-match buffer<cr>
 let g:vimfiler_as_default_explorer = 1 " as the default explorer
 let g:neocomplete#enable_at_startup = 1
 nnoremap <space>f :VimFiler<cr>
+imap jj <Esc>
 

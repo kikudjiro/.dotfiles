@@ -53,7 +53,7 @@ plugins=(git tmux tmuxinator)
 
 # User configuration
 
-  export PATH="/home/alex/bin:/home/alex/.rvm/gems/ruby-2.2.2/bin:/home/alex/.rvm/gems/ruby-2.2.2@global/bin:/home/alex/.rvm/rubies/ruby-2.2.2/bin:/home/alex/src/qtbase/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/alex/.rvm/bin:/home/alex/.rvm/bin"
+export PATH="/home/alex/bin:/home/alex/.rvm/gems/ruby-2.2.2/bin:/home/alex/.rvm/gems/ruby-2.2.2@global/bin:/home/alex/.rvm/rubies/ruby-2.2.2/bin:/home/alex/src/qtbase/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/alex/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -86,4 +86,18 @@ export EDITOR='vim'
 alias l="ls -aF"
 alias ll="ls -laF"
 alias mux="tmuxinator"
+
+
+man() {
+    LESS_TERMCAP_mb=$'\e'"[1;31m" \
+    LESS_TERMCAP_md=$'\e'"[1;31m" \
+    LESS_TERMCAP_me=$'\e'"[0m" \
+    LESS_TERMCAP_se=$'\e'"[0m" \
+    LESS_TERMCAP_so=$'\e'"[1;44;33m" \
+    LESS_TERMCAP_ue=$'\e'"[0m" \
+    LESS_TERMCAP_us=$'\e'"[1;32m" \
+    command man "$@"
+}
+
+
 
