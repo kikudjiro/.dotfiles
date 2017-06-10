@@ -6,3 +6,6 @@
 	editor = vim -f
 [push]
 	default = current
+[rebase]
+    instructionFormat = %s [%an]
+
