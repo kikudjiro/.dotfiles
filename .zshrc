@@ -49,7 +49,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git tmux tmuxinator)
+plugins=(git tmux tmuxinator docker npm nvm heroku man httpie gradle meteor mvn node pip postgres pyenv python rails redis-cli rake sudo scala spring )
 
 # User configuration
 
@@ -86,7 +86,8 @@ export EDITOR='vim'
 alias l="ls -aF"
 alias ll="ls -laF"
 alias mux="tmuxinator"
-
+alias dstop="docker ps -a -q|xargs docker stop"
+alias drm="docker ps -a -q|xargs docker rm"
 
 man() {
     LESS_TERMCAP_mb=$'\e'"[1;31m" \
@@ -100,4 +101,10 @@ man() {
 }
 
 
+export NVM_DIR="/home/alex/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export PATH="/home/alex/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
