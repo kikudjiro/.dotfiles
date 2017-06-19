@@ -1,4 +1,10 @@
 #/bin/bash
+
+# it depends on curl, git
+
+# install oh-my-zsh by curl
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/.vimrc ~/.vimrc
 ln -s ~/.dotfiles/.screenrc ~/.screenrc
