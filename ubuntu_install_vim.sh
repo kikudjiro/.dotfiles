@@ -14,8 +14,8 @@ sudo ln -s /usr/include/luajit-2.0 /usr/include/lua5.1/include
 
 # install ruby (actually, rvm + ruby)
 sudo apt-get -y install gnupg
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-curl -L https://get.rvm.io | bash -s stable --ruby
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+curl -L http://get.rvm.io | bash -s stable --ruby
 source ~/.rvm/scripts/rvm
  
 cd ~
