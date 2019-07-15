@@ -102,7 +102,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="$PATH:$HOME/.rvm/bin:$HOME/go/bin"
 export NODE_PATH=`npm root -g`
 export TYMLEZ=/home/alex/Projects/tymlez
 export BUILD_ID=D
@@ -110,3 +110,4 @@ export BUILD_ID=D
 export GOROOT=/usr/local/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
+alias lzd='lazydocker'
