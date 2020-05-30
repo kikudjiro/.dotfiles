@@ -1,6 +1,6 @@
 [user]
-	name = alexander.alexeychuk
-	email = kikudjiro@gmail.com
+	name = Alex Alekseichuk
+	email = alex.alekseichuk@yandex.com
 [core]
 	autocrlf = input
 	editor = vim -f
